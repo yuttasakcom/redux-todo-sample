@@ -2,10 +2,10 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import logger from "redux-logger";
 import ReduxPromise from "redux-promise";
 
-import usersReducer from "./users/reducer";
+import todosReducer from "./todos/reducer";
 
 const reducers = combineReducers({
-  users: usersReducer,
+  todos: todosReducer,
 });
 
 const store = createStore(reducers, {}, applyMiddleware(logger, ReduxPromise));

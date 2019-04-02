@@ -1,10 +1,10 @@
 import React from "react";
 
-import Users from "../components/Users";
+import Todos from "../components/Todos";
 const Home = () => (
   <div>
     <h1>Home Page</h1>
-    <Users />
+    <Todos />
   </div>
 );
 
