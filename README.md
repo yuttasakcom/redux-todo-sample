@@ -1,1 +1,1 @@
-# React Simple Boilerplate
+# Redux Todo Sample

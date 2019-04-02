@@ -1,8 +1,8 @@
 {
-  "name": "react-simple-boilerplate",
+  "name": "redux-todo-sample",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:yuttasakcom/react-simple-boilerplate.git",
+  "repository": "git@github.com:yuttasakcom/redux-todo-sample.git",
   "author": "Yuttasak Pannawat <yuttasakcom@gmail.com>",
   "license": "MIT",
   "scripts": {
