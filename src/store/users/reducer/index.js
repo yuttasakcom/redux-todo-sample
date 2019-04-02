@@ -1,23 +1,9 @@
-const initialState = [
-  {
-    id: 1,
-    name: "Yo",
-  },
-  {
-    id: 2,
-    name: "Yea",
-  },
-  {
-    id: 3,
-    name: "Sri",
-  },
-];
-
-const usersReducer = (state = initialState, action) => {
+const usersReducer = (state = [], action) => {
   switch (action.type) {
     case "GET_USERS":
       return state;
-
+    case "SET_USERS":
+      return [action.payload, ...state];
     default:
       return state;
   }

@@ -1,5 +1,11 @@
 import React from "react";
 
-const Home = () => <div>Home Page</div>;
+import Users from "../components/Users";
+const Home = () => (
+  <div>
+    <h1>Home Page</h1>
+    <Users />
+  </div>
+);
 
 export default Home;
