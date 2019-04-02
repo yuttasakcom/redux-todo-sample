@@ -1,5 +1,5 @@
 import "@babel/polyfill";
-import React, { Fragment } from "react";
+import React from "react";
 import { render } from "react-dom";
 import {
   BrowserRouter as Router,
@@ -16,12 +16,10 @@ import store from "./store";
 const App = () => (
   <Provider store={store}>
     <Router>
-      <Fragment>
-        <Switch>
-          <Route path="/" component={Home} exect />
-          <Redirect to="/" />
-        </Switch>
-      </Fragment>
+      <Switch>
+        <Route path="/" component={Home} />
+        <Redirect to="/" />
+      </Switch>
     </Router>
   </Provider>
 );

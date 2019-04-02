@@ -12,7 +12,11 @@ class Users extends React.Component {
     return (
       <div>
         <h2>Users</h2>
-        <ul>{console.log(this.props.users)}</ul>
+        <ul>
+          {this.props.users.map(user => (
+            <li key={user.id}>{user.name}</li>
+          ))}
+        </ul>
       </div>
     );
   }
